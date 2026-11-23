@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "id": "yoeli-gour-destruction-superchannel",
+  "revision": 4,
+  "files": [
+    {
+      "path": "note.tex",
+      "bytes": 22088,
+      "sha256": "b5eaaf325c7b6824ca86aa902a9b9abf9200d6d471e881332f3b2d04086e62ef"
+    },
+    {
+      "path": "note.pdf",
+      "bytes": 92753,
+      "sha256": "889ca4368f188227fc39c1c5fa4b843bcbfac0201db55bf54c4fc33e131eaa51"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3840,
+      "sha256": "cbdda4586c7ea4718e3aef6db632fb7f63b8e732519120d4efe031daa7d5d013"
+    },
+    {
+      "path": "metadata.json",
+      "bytes": 5034,
+      "sha256": "3b8972a18ffed5c9785034f918aaaea220ccc0d5c153786a702a2c035e897758"
+    },
+    {
+      "path": "verify.py",
+      "bytes": 11322,
+      "sha256": "9cd5d7b47fb69bf9ae46e00a355e474ff057267d0f8224ae9c092c30031741d5"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 2073,
+      "sha256": "f2872a9bcedf8b0014820c428ea0697cecc0d7c6ae3768df388ca530e9d68920"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 28,
+      "sha256": "47fd19021144e071cc43b6e265aafada0056abe89724ad95bd6e3a8e37995b94"
+    }
+  ]
+}

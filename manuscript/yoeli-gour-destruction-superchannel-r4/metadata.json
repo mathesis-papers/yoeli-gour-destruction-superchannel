@@ -1,0 +1,35 @@
+{
+  "id": "yoeli-gour-destruction-superchannel",
+  "revision": 4,
+  "problem_ids": ["yoeli-gour-destruction-superchannel"],
+  "topic": "Physical and linear fixed-set descriptions of destruction-covariant channels",
+  "title": "Fixed points of superchannels for dephasing-covariant channels",
+  "creators": [
+    {"name": "Ma, Haobo", "affiliation": "ChronoAI Pte Ltd, Singapore"},
+    {"name": "Zhang, Wenlin", "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore"}
+  ],
+  "abstract": "Extending the two-sided destruction construction of Saxena, Chitambar and Gour (2019), we answer Yoeli and Gour's fixed-superchannel question in Instability as a Quantum Resource, arXiv:2602.18323v1, p. 5, Open directions, negatively: in every dimension d >= 3, dephasing-covariant channels are not exactly the fixed channels of any deterministic superchannel. Any completely positive Choi action fixing every such channel must be the identity. Two-sector pinching, including qubit complete dephasing, admits an explicit physical projection. Uniformity-preserving channels have the same obstruction in every dimension d >= 2. Explicit negative determinants distinguish linear projection from physical retraction and give a counterexample to the affine-set assertion in arXiv:2402.05474v2, Theorem 9.2.",
+  "summary": "Complete dephasing: positive for d = 1, 2, negative for d >= 3. Uniformity preservation: negative for d >= 2. Two-sector pinching: positive in every dimension.",
+  "license": "cc-by-4.0",
+  "evidence_url": "https://github.com/the-omega-institute/trureturing/blob/a252cc46f0e145418a978217b8abd41a73fd820d/D5/S3/QuantumChannels/YoeliGourDestructionSuperchannelRefutation.lean",
+  "posing_source": {
+    "url": "https://arxiv.org/abs/2602.18323v1",
+    "locator": "PDF p. 5, Open directions, continuation after Eq. (29) on p. 4",
+    "status_word": "key open question",
+    "coverage": "Answered: no in general; positive and negative special cases are distinguished."
+  },
+  "coverage": [
+    {"statement": "Fixing all dephasing-covariant channels forces identity for d >= 3", "status": "not posed; proved", "proof": "Theorem 1", "scope": "Written dimension-uniform proof"},
+    {"statement": "The source's general fixed-superchannel question", "status": "Answered: no in general", "lean_declaration": "D5.S3.QuantumChannels.YoeliGourDestructionSuperchannelRefutation.result", "lean_scope": "Negation of the universal admissible-system assertion through qutrit complete dephasing; helper fixes_dio_identity establishes qutrit rigidity"},
+    {"statement": "Two-sector pinching admits a physical idempotent projection", "status": "not posed separately; proved", "proof": "Corollary 3; includes complete dephasing for d = 1, 2"},
+    {"statement": "Uniformity-preserving channels cannot be an exact physical fixed set for d >= 2; the obstruction persists for conditional nonuniformity", "status": "not posed separately; obstruction proved", "proof": "Corollary 4"},
+    {"statement": "Dephasing on an a-dimensional factor with an unrestricted side system has an exact physical fixed-set projection if and only if a <= 2", "status": "not posed separately; proved", "proof": "Corollaries 3 and 4; tensor products of connected spanning Choi families"},
+    {"statement": "Two-sided destruction fixes the two-sided-invariant maps; complete dephasing fixes classical channels", "status": "Reproved; prior proof Saxena, Chitambar and Gour (2019 preprint; 2020 publication)", "source_url": "https://arxiv.org/abs/1910.00708", "locator": "Eq. (4)"},
+    {"statement": "Identity input destruction and replacer output destruction yield a single fixed channel", "status": "Reproved; prior uniform example Yoeli and Gour (2026); extended to full-rank replacers", "source_url": "https://arxiv.org/abs/2602.18323v1", "locator": "p. 4, after Eq. (29)"},
+    {"statement": "The natural algebraic covariance projection need not preserve complete positivity", "status": "not posed; obstruction proved", "proof": "Corollary 5", "witness": "Choi principal determinant -784/531441"},
+    {"statement": "Every affine density-matrix set admits a self-adjoint resource-destroying map", "source_quote": "there exists a unique self-adjoint RDM", "status": "Refuted (explicit counterexample)", "source_url": "https://arxiv.org/abs/2402.05474v2", "locator": "Theorem 9.2, printed p. 442", "proof": "Corollary 6; determinant -1/27"},
+    {"statement": "Twirl covariance is weaker than covariance under every diagonal-phase group element", "status": "Reproved; prior distinction Yoeli and Gour (2026)", "proof": "Explicit qubit swap and diag(1,i) witness"},
+    {"statement": "Nonphysical destruction maps, general restricted free operations and higher-order/GPT reversibility", "status": "not covered"}
+  ],
+  "finite_checks": {"program": "verify.py", "output": "verification.json", "scope": "Exact finite witnesses, selected pinching coefficient masks and explicit determinants; all dimension-uniform conclusions have written proofs."}
+}

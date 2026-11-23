@@ -1,0 +1,256 @@
+{
+  "nodes": [
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s1",
+      "contributor": null,
+      "identity": "collected:yoeli-gour-destruction-superchannel:4:s1",
+      "kind": "paper",
+      "label": "Theorem",
+      "lean_source": {
+        "revision": "a252cc46f0e145418a978217b8abd41a73fd820d",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/a252cc46f0e145418a978217b8abd41a73fd820d/D5/S3/QuantumChannels/YoeliGourDestructionSuperchannelRefutation.lean"
+      },
+      "lineage": "collected:yoeli-gour-destruction-superchannel:s1",
+      "macros": {
+        "\\Ad": "\\operatorname{Ad}",
+        "\\DIO": "\\operatorname{DIO}",
+        "\\Tr": "\\operatorname{Tr}",
+        "\\id": "\\operatorname{id}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "yoeli-gour-destruction-superchannel",
+      "scope": "in_scope",
+      "statement": "Let $d\\geq3$. If a complex-linear transformation\n$\\Theta:\\mathsf L_d\\to\\mathsf L_d$ has completely positive Choi action\nand fixes every channel in $\\DIO_d$, then $\\Theta=\\id$ on $\\mathsf L_d$.\nConsequently, no deterministic superchannel has fixed CPTP set exactly\n$\\DIO_d$, even without requiring idempotence.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Fixed points of superchannels for dephasing-covariant channels",
+      "toolchain": null,
+      "version": 4,
+      "work": "yoeli-gour-destruction-superchannel"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s2",
+      "contributor": null,
+      "identity": "collected:yoeli-gour-destruction-superchannel:4:s2",
+      "kind": "paper",
+      "label": "Lemma",
+      "lean_source": {
+        "revision": "a252cc46f0e145418a978217b8abd41a73fd820d",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/a252cc46f0e145418a978217b8abd41a73fd820d/D5/S3/QuantumChannels/YoeliGourDestructionSuperchannelRefutation.lean"
+      },
+      "lineage": "collected:yoeli-gour-destruction-superchannel:s2",
+      "macros": {
+        "\\Ad": "\\operatorname{Ad}",
+        "\\DIO": "\\operatorname{DIO}",
+        "\\Tr": "\\operatorname{Tr}",
+        "\\id": "\\operatorname{id}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "yoeli-gour-destruction-superchannel",
+      "scope": "in_scope",
+      "statement": "Let $T:M_n\\to M_n$ be completely positive and unital. Suppose that $T$\nfixes the rank-one projections onto unit vectors $v_\\alpha$ spanning\n$\\mathbb C^n$. Join two indices when\n$\\langle v_\\alpha,v_\\beta\\rangle\\ne0$. If this graph is connected, then\n$T=\\id$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Fixed points of superchannels for dephasing-covariant channels",
+      "toolchain": null,
+      "version": 4,
+      "work": "yoeli-gour-destruction-superchannel"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s3",
+      "contributor": null,
+      "identity": "collected:yoeli-gour-destruction-superchannel:4:s3",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "a252cc46f0e145418a978217b8abd41a73fd820d",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/a252cc46f0e145418a978217b8abd41a73fd820d/D5/S3/QuantumChannels/YoeliGourDestructionSuperchannelRefutation.lean"
+      },
+      "lineage": "collected:yoeli-gour-destruction-superchannel:s3",
+      "macros": {
+        "\\Ad": "\\operatorname{Ad}",
+        "\\DIO": "\\operatorname{DIO}",
+        "\\Tr": "\\operatorname{Tr}",
+        "\\id": "\\operatorname{id}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "yoeli-gour-destruction-superchannel",
+      "scope": "in_scope",
+      "statement": "Let $P$ be an orthogonal projection on $\\mathbb C^d$,\n$Q=I-P$, and $\\Lambda(X)=PXP+QXQ$.\nThere is an idempotent deterministic superchannel whose fixed linear maps\nare exactly those commuting with $\\Lambda$.\nIn particular, the fixed-set question for complete dephasing has a positive\nanswer in dimensions $1$ and $2$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Fixed points of superchannels for dephasing-covariant channels",
+      "toolchain": null,
+      "version": 4,
+      "work": "yoeli-gour-destruction-superchannel"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s4",
+      "contributor": null,
+      "identity": "collected:yoeli-gour-destruction-superchannel:4:s4",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "a252cc46f0e145418a978217b8abd41a73fd820d",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/a252cc46f0e145418a978217b8abd41a73fd820d/D5/S3/QuantumChannels/YoeliGourDestructionSuperchannelRefutation.lean"
+      },
+      "lineage": "collected:yoeli-gour-destruction-superchannel:s4",
+      "macros": {
+        "\\Ad": "\\operatorname{Ad}",
+        "\\DIO": "\\operatorname{DIO}",
+        "\\Tr": "\\operatorname{Tr}",
+        "\\id": "\\operatorname{id}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "yoeli-gour-destruction-superchannel",
+      "scope": "in_scope",
+      "statement": "Let $a,b\\geq1$, and consider channels on $M_a\\otimes M_b$.\nFor either destruction $\\mathcal D_a\\otimes\\id_b$ with $a\\geq2$, or\n$\\Delta_a\\otimes\\id_b$ with $a\\geq3$, any complex-linear transformation\nwith completely positive Choi action fixing every destruction-covariant\nchannel is the identity. Neither covariant class is an exact physical\nfixed set. For $\\Delta_a\\otimes\\id_b$, such a fixed-set projection exists\nexactly when $a\\leq2$.\nIn particular, the answer is negative for nonuniformity and conditional\nnonuniformity in Table~I of Yoeli and Gour.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Fixed points of superchannels for dephasing-covariant channels",
+      "toolchain": null,
+      "version": 4,
+      "work": "yoeli-gour-destruction-superchannel"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s5",
+      "contributor": null,
+      "identity": "collected:yoeli-gour-destruction-superchannel:4:s5",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "a252cc46f0e145418a978217b8abd41a73fd820d",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/a252cc46f0e145418a978217b8abd41a73fd820d/D5/S3/QuantumChannels/YoeliGourDestructionSuperchannelRefutation.lean"
+      },
+      "lineage": "collected:yoeli-gour-destruction-superchannel:s5",
+      "macros": {
+        "\\Ad": "\\operatorname{Ad}",
+        "\\DIO": "\\operatorname{DIO}",
+        "\\Tr": "\\operatorname{Tr}",
+        "\\id": "\\operatorname{id}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "yoeli-gour-destruction-superchannel",
+      "scope": "in_scope",
+      "statement": "For arbitrary idempotent linear maps $\\Delta_A,\\Delta_B$, the formula\n\\[\n \\mathcal Q(\\mathcal N)=\\Delta_B\\mathcal N\\Delta_A\n       +(\\id-\\Delta_B)\\mathcal N(\\id-\\Delta_A)\n\\]\nis an idempotent linear projection with fixed space exactly\n$\\{\\mathcal N:\\Delta_B\\mathcal N=\\mathcal N\\Delta_A\\}$.\nFor complete dephasing on $M_3$, it sends some CPTP maps to maps that\nare not completely positive.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Fixed points of superchannels for dephasing-covariant channels",
+      "toolchain": null,
+      "version": 4,
+      "work": "yoeli-gour-destruction-superchannel"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s6",
+      "contributor": null,
+      "identity": "collected:yoeli-gour-destruction-superchannel:4:s6",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "a252cc46f0e145418a978217b8abd41a73fd820d",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/a252cc46f0e145418a978217b8abd41a73fd820d/D5/S3/QuantumChannels/YoeliGourDestructionSuperchannelRefutation.lean"
+      },
+      "lineage": "collected:yoeli-gour-destruction-superchannel:s6",
+      "macros": {
+        "\\Ad": "\\operatorname{Ad}",
+        "\\DIO": "\\operatorname{DIO}",
+        "\\Tr": "\\operatorname{Tr}",
+        "\\id": "\\operatorname{id}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "yoeli-gour-destruction-superchannel",
+      "scope": "in_scope",
+      "statement": "The affine set $F=\\{\\rho\\in M_3:\\rho\\geq0,\\ \\Tr\\rho=1,\\ \\rho_{02}=0\\}$\nadmits no self-adjoint linear resource-destroying map, that is, no\nHilbert--Schmidt self-adjoint linear map taking every state into $F$\nand fixing every state in $F$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Fixed points of superchannels for dephasing-covariant channels",
+      "toolchain": null,
+      "version": 4,
+      "work": "yoeli-gour-destruction-superchannel"
+    }
+  ]
+}

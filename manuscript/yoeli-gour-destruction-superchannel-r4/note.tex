@@ -1,0 +1,456 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,array}
+\usepackage[T1]{fontenc}
+\usepackage[colorlinks=true,urlcolor=blue,citecolor=blue,linkcolor=blue]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\DIO}{\operatorname{DIO}}
+\newcommand{\Ad}{\operatorname{Ad}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\id}{\operatorname{id}}
+\title{Fixed points of superchannels for dephasing-covariant channels}
+\author{Haobo Ma\\\small ChronoAI Pte Ltd, Singapore
+\and Wenlin Zhang\\\small National University of Singapore\\\small ChronoAI Pte Ltd, Singapore}
+\date{12 November 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+Extending the two-sided destruction construction of Saxena, Chitambar and
+Gour (2019), we answer Yoeli and Gour's fixed-superchannel question in
+\emph{Instability as a Quantum Resource},
+arXiv:2602.18323v1, p.~5, Open directions, negatively:
+in every dimension $d\geq3$, the dephasing-covariant channels are not exactly
+the fixed channels of any deterministic superchannel.
+Indeed, any superchannel fixing all such channels must be the identity on
+the full space of linear maps. The proof uses the completely depolarizing
+channel and a connected spanning family of monomial-unitary Choi vectors.
+For qubits an explicit idempotent superchannel has the requested fixed set,
+and the same construction works for pinching into two orthogonal sectors.
+The obstruction also holds for uniformity-preserving channels in every
+dimension at least two, and both obstructions persist with an unrestricted
+quantum side system. We separate these results from the known two-sided
+destruction construction, and exhibit the positivity obstruction to a
+natural linear projection onto the covariant maps.
+\end{abstract}
+
+\section{The question and the setting}
+Yoeli and Gour, in \emph{Instability as a Quantum Resource},
+arXiv:2602.18323v1, p.~5, Open directions, identify as a ``key open question'' whether
+``destruction-covariant channels themselves arise as fixed points of an
+idempotent superchannel'' \cite{YG1}.
+We answer this question negatively for complete dephasing in dimension
+three and above. Complete dephasing is an admissible destruction channel:
+it is idempotent, completely positive and trace preserving (CPTP), and fixes
+the full-rank state $I/d$. The quoted question is absent from the revised
+Open directions paragraph \cite[v2, p.~5]{YG2}; our posing locator is v1.
+
+Let $M_d$ denote the complex $d\times d$ matrices, with standard basis
+$|0\rangle,\ldots,|d-1\rangle$ and matrix units $E_{jk}=|j\rangle\langle k|$.
+Write
+\[
+ \Delta_d(X)=\sum_{j=0}^{d-1}E_{jj}XE_{jj},\qquad
+ \mathcal D_d(X)=\Tr(X)I/d,\qquad \Ad_U(X)=UXU^*.
+\]
+A channel $\mathcal N:M_d\to M_d$ is dephasing covariant if
+$\mathcal N\Delta_d=\Delta_d\mathcal N$; denote this class by $\DIO_d$.
+This is the commuting condition for the dephasing resource-destroying
+map \cite{LHL}. It is distinct from covariance of a superchannel under
+the two-sided channel dephasing construction of Saxena, Chitambar and
+Gour (2019 preprint; 2020 publication) \cite{SCG}.
+The latter framework takes classical channels as its fixed objects;
+it does not identify all dephasing-covariant channels with fixed objects.
+Ahnefeld, Theurer and Plenio \cite[Definition~9, Theorem~10]{ATP}
+characterize compatible higher-order operations for DIO. Compatibility
+under composition is different from the existence of a retraction fixing
+every DIO channel, which is the question considered here.
+
+Let $\mathsf L_d$ be the complex vector space of all complex-linear maps
+$M_d\to M_d$. Use the input-first Choi convention
+\[
+ J_{\mathcal N}=\sum_{j,k}E_{jk}\otimes\mathcal N(E_{jk}),\qquad
+ |U\rangle\!\rangle=\sum_j|j\rangle\otimes U|j\rangle.
+\]
+Then $J_{\Ad_U}=|U\rangle\!\rangle\langle\!\langle U|$ and
+$J_{\mathcal D_d}=I_{d^2}/d$. A deterministic superchannel is a physical
+pre- and post-processing transformation of channels, allowing a memory
+system. Its complex-linear extension $\Theta:\mathsf L_d\to\mathsf L_d$
+induces a completely positive map $T:M_{d^2}\to M_{d^2}$ through
+$T(J_{\mathcal N})=J_{\Theta(\mathcal N)}$
+\cite[pp.~2--3, Eqs.~(6)--(7) and Theorem~1]{CDP}.
+
+\begin{theorem}\label{thm:rigidity}
+Let $d\geq3$. If a complex-linear transformation
+$\Theta:\mathsf L_d\to\mathsf L_d$ has completely positive Choi action
+and fixes every channel in $\DIO_d$, then $\Theta=\id$ on $\mathsf L_d$.
+Consequently, no deterministic superchannel has fixed CPTP set exactly
+$\DIO_d$, even without requiring idempotence.
+\end{theorem}
+
+\section{Proof by fixed rank-one projections}
+The projection-commutation step is a special case of
+Arias, Gheondea and Gudder \cite[Corollary~3.4]{AGG}; we include its
+elementary proof and the connected-family consequence.
+\begin{lemma}\label{lem:rigidity}
+Let $T:M_n\to M_n$ be completely positive and unital. Suppose that $T$
+fixes the rank-one projections onto unit vectors $v_\alpha$ spanning
+$\mathbb C^n$. Join two indices when
+$\langle v_\alpha,v_\beta\rangle\ne0$. If this graph is connected, then
+$T=\id$.
+\end{lemma}
+\begin{proof}
+Choose a Kraus representation $T(X)=\sum_r A_rXA_r^*$.
+For a fixed projection $P$, both $T(P)=P$ and $T(I-P)=I-P$ hold. Hence
+\[
+ 0=(I-P)T(P)(I-P)
+   =\sum_r ((I-P)A_rP)((I-P)A_rP)^*.
+\]
+Each summand is positive, so $(I-P)A_rP=0$ for every $r$.
+Applying the same argument to $I-P$ gives $PA_r(I-P)=0$.
+Thus $A_rP=PA_r$. Write $A_rv_\alpha=\lambda_{r,\alpha}v_\alpha$.
+Commutation with $P_\alpha=|v_\alpha\rangle\langle v_\alpha|$ also gives
+$\langle v_\alpha|A_r=\lambda_{r,\alpha}\langle v_\alpha|$.
+Consequently
+\[
+ (\lambda_{r,\alpha}-\lambda_{r,\beta})
+       \langle v_\alpha,v_\beta\rangle=0.
+\]
+Connectivity makes each eigenvalue independent of $\alpha$; spanning then
+gives $A_r=\lambda_r I$. Finally, unitality implies
+$\sum_r|\lambda_r|^2=1$, so $T(X)=X$.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:rigidity}]
+The channel $\mathcal D_d$ commutes with $\Delta_d$, since both
+$\Delta_d\mathcal D_d$ and $\mathcal D_d\Delta_d$ equal $\mathcal D_d$.
+Its fixed Choi matrix $I_{d^2}/d$ implies $T(I_{d^2})=I_{d^2}$.
+
+For a permutation $p$ of $\{0,\ldots,d-1\}$, let $P_p|j\rangle=|p(j)\rangle$.
+Put $D_\varnothing=I$, and for each index $j$ let $D_j$ be diagonal with
+$i$ at position $j$ and $1$ elsewhere, where $i^2=-1$.
+All monomial unitaries $U_{p,q}=P_pD_q$, for
+$q\in\{\varnothing,0,\ldots,d-1\}$, satisfy
+$\Ad_{U_{p,q}}\Delta_d=\Delta_d\Ad_{U_{p,q}}$:
+diagonal phases cancel on diagonal entries, and permutations relabel those
+entries. Therefore $T$ fixes the rank-one projections onto
+\[
+ v_{p,q}=d^{-1/2}|U_{p,q}\rangle\!\rangle.
+\]
+These vectors span $\mathbb C^d\otimes\mathbb C^d$, because
+\[
+ v_{p,j}-v_{p,\varnothing}
+   =\frac{i-1}{\sqrt d}|j\rangle\otimes|p(j)\rangle,
+\]
+and for each pair $j,k$ a permutation with $p(j)=k$ exists.
+
+Each $v_{p,j}$ is joined to $v_{p,\varnothing}$ since
+\[
+ \langle v_{p,\varnothing},v_{p,j}\rangle=(d-1+i)/d\ne0.
+\]
+If $p'=p\circ\tau$ for a transposition $\tau$, then
+\[
+ \langle v_{p,\varnothing},v_{p',\varnothing}\rangle
+   =\Tr(P_p^*P_{p'})/d=(d-2)/d\ne0.
+\]
+Every permutation is a product of transpositions, so the whole graph is
+connected. Lemma~\ref{lem:rigidity} gives $T=\id$, hence $\Theta=\id$
+by the Choi isomorphism.
+
+To see why this forbids the specified fixed set, take
+\[
+ R=\begin{pmatrix}3/5&-4/5\\4/5&3/5\end{pmatrix}\oplus I_{d-2}.
+\]
+This is unitary, and $(RE_{00}R^*)_{01}=12/25$, whereas
+$(\Delta_d(RE_{00}R^*))_{01}=0$. Thus $\Ad_R$ is not in $\DIO_d$,
+but the identity superchannel fixes it.
+\end{proof}
+
+\section{Positive cases and the nonuniformity obstruction}
+\begin{corollary}\label{prop:qubit}
+Let $P$ be an orthogonal projection on $\mathbb C^d$,
+$Q=I-P$, and $\Lambda(X)=PXP+QXQ$.
+There is an idempotent deterministic superchannel whose fixed linear maps
+are exactly those commuting with $\Lambda$.
+In particular, the fixed-set question for complete dephasing has a positive
+answer in dimensions $1$ and $2$.
+\end{corollary}
+\begin{proof}
+Let $Z=P-Q$, so $Z^*=Z$, $Z^2=I$. Put $\mathcal C=\Ad_Z$ and define
+\[
+ \Gamma(\mathcal N)=\mathcal C\mathcal N\mathcal C,
+ \qquad \Theta=(\id+\Gamma)/2.
+\]
+Both terms are physical pre-/post-processings, and their equal random
+mixture is a deterministic superchannel. Since $\mathcal C^2=\id$,
+we have $\Gamma^2=\id$ and $\Theta^2=\Theta$. Moreover,
+\[
+ \Theta(\mathcal N)=\mathcal N
+ \ \Longleftrightarrow\ \mathcal C\mathcal N\mathcal C=\mathcal N
+ \ \Longleftrightarrow\ \mathcal N\mathcal C=\mathcal C\mathcal N
+ \ \Longleftrightarrow\ \mathcal N\Lambda=\Lambda\mathcal N,
+\]
+where the last step uses $\Lambda=(\id+\mathcal C)/2$.
+For $d=2$ and $P=E_{00}$, $\Lambda=\Delta_2$.
+For $d=1$, all linear maps commute with $\Delta_1=\id$, and the identity
+superchannel supplies the corresponding fixed set.
+\end{proof}
+
+\begin{corollary}\label{cor:uniform}
+Let $a,b\geq1$, and consider channels on $M_a\otimes M_b$.
+For either destruction $\mathcal D_a\otimes\id_b$ with $a\geq2$, or
+$\Delta_a\otimes\id_b$ with $a\geq3$, any complex-linear transformation
+with completely positive Choi action fixing every destruction-covariant
+channel is the identity. Neither covariant class is an exact physical
+fixed set. For $\Delta_a\otimes\id_b$, such a fixed-set projection exists
+exactly when $a\leq2$.
+In particular, the answer is negative for nonuniformity and conditional
+nonuniformity in Table~I of Yoeli and Gour.
+\end{corollary}
+\begin{proof}
+First take $b=1$, write $d=a$, and consider destruction $\mathcal D_d$.
+For CPTP $\mathcal N$, commuting with $\mathcal D_d$ is equivalent to
+$\mathcal N(I/d)=I/d$. This class contains $\mathcal D_d$ and every
+unitary channel. For $d\geq3$ the proof of
+Theorem~\ref{thm:rigidity} therefore applies unchanged.
+For $d=2$, the six monomial vectors used there split into two connected
+families, for the identity and transposition permutations. Their span is
+still all of $\mathbb C^4$. The rational rotation $R$ displayed above
+connects them: with $X=\bigl(\begin{smallmatrix}0&1\\1&0\end{smallmatrix}\bigr)$
+and $D_0=\operatorname{diag}(i,1)$,
+\[
+ \tfrac12\Tr(R)=3/5\ne0,\qquad
+ \tfrac12\Tr(R^*XD_0)=2(i-1)/5\ne0.
+\]
+The seven-vector family is connected, so Lemma~\ref{lem:rigidity} applies.
+Finally, the channel $\mathcal N_0(X)=\Tr(X)E_{00}$ is not
+uniformity preserving. The identity superchannel fixes it, excluding the
+requested exact fixed set.
+
+For the tensor extensions, in each dimension $r$ choose the connected
+spanning unitary Choi family just constructed: the monomial family for
+$r\geq3$, the seven-vector family for $r=2$, and the single identity
+vector for $r=1$. For dephasing on the first factor with $a\geq3$, use
+only its monomial family there. Every product unitary $U_A\otimes V_B$
+so obtained is covariant for the specified destruction. Its normalized
+Choi vector is the tensor product of the two local vectors, up to a fixed
+reordering of tensor factors. These vectors span the full Choi space, and
+their overlap graph is connected: an edge in either local graph gives an
+edge with the other coordinate fixed. Both destructions are unital, so
+their covariant classes contain the global completely depolarizing channel.
+The Choi action is therefore unital, and Lemma~\ref{lem:rigidity} applies.
+For $\mathcal D_a\otimes\id_b$, the channel
+$\mathcal N_0\otimes\id_b$ is not covariant; for
+$\Delta_a\otimes\id_b$, use $\Ad_R\otimes\id_b$ instead.
+Finally, $a=2$ is two-sector pinching with $P=E_{00}\otimes I_b$,
+covered by Corollary~\ref{prop:qubit}; $a=1$ gives the identity destruction.
+\end{proof}
+
+\section{Two-sided destruction and linear projections}
+Let $\Delta_A:M_{d_A}\to M_{d_A}$ and
+$\Delta_B:M_{d_B}\to M_{d_B}$ be idempotent destruction channels,
+and let $\mathcal N:M_{d_A}\to M_{d_B}$.
+The known
+construction $\Pi(\mathcal N)=\Delta_B\mathcal N\Delta_A$
+is physical and idempotent. Its fixed maps satisfy exactly
+$\mathcal N=\Delta_B\mathcal N=\mathcal N\Delta_A$:
+apply either idempotent to $\mathcal N=\Pi(\mathcal N)$; the converse is
+immediate. These are stronger conditions than
+$\Delta_B\mathcal N=\mathcal N\Delta_A$.
+For complete dephasing, this is the two-sided construction of
+Saxena, Chitambar and Gour (2019 preprint; 2020 publication)
+\cite[Eq.~(4)]{SCG}, reproduced in
+Eq.~(29) of Yoeli--Gour v1 and Eq.~(31) of v2.
+In the equal-dimensional case it is
+$\Pi_d(\mathcal N)=\Delta_d\mathcal N\Delta_d$
+\cite[p.~4]{YG1}; it becomes Eq.~(31) in v2 \cite[p.~5]{YG2}.
+It is physical and idempotent. Its fixed channels are precisely
+\[
+ \mathcal N(X)=\sum_{j,k}s_{k|j}X_{jj}E_{kk},
+ \qquad s_{k|j}\geq0,\quad\sum_k s_{k|j}=1.
+\]
+Indeed, $\mathcal N=\Pi_d(\mathcal N)$ removes every off-diagonal input
+matrix unit and forces each $\mathcal N(E_{jj})$ to be diagonal;
+positivity and trace preservation give the stated stochastic columns.
+Conversely, every displayed channel is fixed by $\Pi_d$.
+Such channels commute with $\Delta_d$, but for $d\geq2$ this inclusion is
+strict: the identity channel commutes with $\Delta_d$ and is not fixed
+by $\Pi_d$. Thus the obstruction concerns the larger covariant class,
+not the validity of Eq.~(29).
+
+The other explicit example following Eq.~(29) also survives unchanged.
+More generally, put $\Delta_A=\id$ and
+$\Delta_B(X)=\Tr(X)\gamma$ for a full-rank density matrix $\gamma$.
+For CPTP $\mathcal N$, $\Delta_B\mathcal N$ is the constant channel
+$X\mapsto\Tr(X)\gamma$. Hence covariance is precisely equality with that
+channel, and $\mathcal N\mapsto\Delta_B\mathcal N$ is the required
+idempotent superchannel. The source's uniform channel is $\gamma=I/d_B$.
+
+\begin{corollary}\label{cor:linear}
+For arbitrary idempotent linear maps $\Delta_A,\Delta_B$, the formula
+\[
+ \mathcal Q(\mathcal N)=\Delta_B\mathcal N\Delta_A
+       +(\id-\Delta_B)\mathcal N(\id-\Delta_A)
+\]
+is an idempotent linear projection with fixed space exactly
+$\{\mathcal N:\Delta_B\mathcal N=\mathcal N\Delta_A\}$.
+For complete dephasing on $M_3$, it sends some CPTP maps to maps that
+are not completely positive.
+\end{corollary}
+\begin{proof}
+The idempotents split the input and output spaces into their ranges and
+kernels. Covariance says that the two off-diagonal blocks of
+$\mathcal N$ vanish, and $\mathcal Q$ retains exactly the two diagonal
+blocks. This proves idempotence and the fixed-space characterization.
+For the positivity claim take the real unitary
+\[
+ U=\frac19\begin{pmatrix}7&-4&-4\\-4&1&-8\\-4&-8&1\end{pmatrix}
+   =I-\frac29\begin{pmatrix}1\\2\\2\end{pmatrix}
+                  \begin{pmatrix}1&2&2\end{pmatrix}.
+\]
+In the Choi matrix of $\mathcal Q(\Ad_U)$, the principal submatrix indexed
+by $(0,0),(1,1),(0,2)$ is
+\[
+ \frac1{81}\begin{pmatrix}49&7&0\\7&1&-4\\0&-4&16\end{pmatrix}.
+\]
+Its determinant is $-784/531441<0$, so the Choi matrix is not positive.
+This is an obstruction to this particular linear projection; the
+nonexistence of \emph{any} physical projection follows from
+Theorem~\ref{thm:rigidity}.
+\end{proof}
+
+The same issue already appears for affine sets of states.
+For completely positive resource-destroying maps, Gour
+\cite[Appendix~F, Theorem~2]{Gour2017} already requires Choi positivity
+in addition to affinity. The following example concerns the weaker
+positivity requirement in the state-set definition below.
+In the terminology of Gour \cite[Definition~9.7]{Gour}, a set is affine
+when any affine combination of its elements that is a density matrix
+remains in the set.
+\begin{corollary}\label{cor:affine}
+The affine set $F=\{\rho\in M_3:\rho\geq0,\ \Tr\rho=1,\ \rho_{02}=0\}$
+admits no self-adjoint linear resource-destroying map, that is, no
+Hilbert--Schmidt self-adjoint linear map taking every state into $F$
+and fixing every state in $F$.
+\end{corollary}
+\begin{proof}
+The real span of $F$ is the Hermitian subspace
+$S=\{H=H^*:H_{02}=0\}$. Indeed, $I/3$ belongs to $F$, and every traceless
+direction in $S$ has sufficiently small positive and negative perturbations
+of $I/3$ inside $F$. Such a resource-destroying map would be an idempotent
+with range $S$ on the Hermitian matrices. Self-adjointness makes it the
+orthogonal projection onto $S$, which deletes entries $(0,2)$ and $(2,0)$.
+Applied to the state $\frac13(1,1,1)^{\mathsf T}(1,1,1)$, it yields
+\[
+ \frac13\begin{pmatrix}1&1&0\\1&1&1\\0&1&1\end{pmatrix},
+ \qquad\det=-1/27<0,
+\]
+which is not a state, a contradiction.
+\end{proof}
+Thus the assertion that ``there exists a unique self-adjoint RDM'' for
+every affine set in Theorem~9.2 of \emph{arXiv:2402.05474v2},
+printed p.~442, fails as stated.
+This observation concerns that version, not an identification of its
+theorem numbering or wording with a later book edition.
+
+\paragraph{Covariance under a twirl versus its group.}
+The distinction in v1, p.~4, Open directions, is already visible for
+qubits. For the diagonal-phase group the twirl is $\Delta_2$.
+The swap channel $\Ad_X$ commutes with $\Delta_2$, but does not commute
+with $\Ad_{\operatorname{diag}(1,i)}$: on $E_{01}$ the two orders give
+$-iE_{10}$ and $iE_{10}$. This reproves the source's strict distinction;
+it does not settle its broader question about restricted free operations.
+
+\section{Source coverage and verification scope}
+\begin{center}\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.43\linewidth}>{\raggedright\arraybackslash}p{0.51\linewidth}@{}}
+\toprule
+Source item & Mathematical coverage\\
+\midrule
+v1, p.~5, Open directions, fixed-superchannel question & Answered: no in general;
+complete dephasing for all $d\geq3$,
+Theorem~\ref{thm:rigidity}.\\
+Complete-dephasing boundary cases & Not posed separately; proved for $d=1,2$;
+Corollary~\ref{prop:qubit}.\\
+Two-sector pinching; v1, Table~I, nonuniformity and conditional nonuniformity & Not posed separately;
+positive construction and obstruction proved,
+Corollaries~\ref{prop:qubit} and \ref{cor:uniform}.\\
+Dephasing with an unrestricted side system & Not posed separately; same
+classification by the dephased dimension, Corollary~\ref{cor:uniform}.\\
+v1, Eq.~(29); v2, Eq.~(31), classical channels & Reproved; prior proof
+Saxena--Chitambar--Gour (2019/2020), Eq.~(4).\\
+v1, p.~4, after Eq.~(29), uniform channel & Reproved; prior example
+Yoeli--Gour (2026); extended to full-rank replacers.\\
+v1, p.~4, group twirl versus group covariance & Reproved; prior distinction
+Yoeli--Gour (2026); explicit qubit witness above.\\
+Linear projection onto the covariance subspace & Not posed; obstruction proved,
+Corollary~\ref{cor:linear}.\\
+v1 reference [26], arXiv:2402.05474v2, Theorem~9.2 & Refuted (explicit
+counterexample), Corollary~\ref{cor:affine}.\\
+v1, Open directions: nonphysical destruction maps and restricted free channels
+& Not covered.\\
+v1, Open directions: higher dynamical/GPT reversibility
+& Not covered.\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+In the Lean module \texttt{YoeliGourDestructionSuperchannelRefutation},
+the pinned declaration
+\href{https://github.com/the-omega-institute/trureturing/blob/a252cc46f0e145418a978217b8abd41a73fd820d/D5/S3/QuantumChannels/YoeliGourDestructionSuperchannelRefutation.lean}{\texttt{result}}
+proves the negation of the universal admissible-system fixed-set claim,
+using qutrit complete dephasing. Its helper
+\texttt{fixes\_dio\_identity} establishes the qutrit rigidity statement.
+All other results above have written proofs, including the dimension-uniform
+extension, the boundary cases and the sibling corollaries. The accompanying
+exact-arithmetic program checks finite qutrit and qubit families, selected
+two-sector pinchings, both negative determinants, the replacer identity and
+the group-covariance witness. These finite checks do not supply an
+all-dimension proof.
+
+\begin{thebibliography}{9}
+\bibitem{YG1} G.~Yoeli and G.~Gour,
+\emph{Instability as a Quantum Resource},
+\href{https://arxiv.org/abs/2602.18323v1}{arXiv:2602.18323v1} (2026),
+especially pp.~1, 4--5, Eq.~(1), Eq.~(29), and Open directions.
+\bibitem{YG2} G.~Yoeli and G.~Gour,
+\emph{Instability as a Quantum Resource},
+\href{https://arxiv.org/abs/2602.18323v2}{arXiv:2602.18323v2} (2026),
+especially p.~5, Eq.~(31) and Open directions.
+\bibitem{LHL} Z.-W.~Liu, X.~Hu, and S.~Lloyd,
+\emph{Resource Destroying Maps}, Phys. Rev. Lett. \textbf{118}, 060502 (2017),
+\href{https://doi.org/10.1103/PhysRevLett.118.060502}{doi:10.1103/PhysRevLett.118.060502}.
+\bibitem{CDP} G.~Chiribella, G.~M.~D'Ariano, and P.~Perinotti,
+\emph{Transforming quantum operations: quantum supermaps},
+EPL \textbf{83}, 30004 (2008),
+\href{https://doi.org/10.1209/0295-5075/83/30004}{doi:10.1209/0295-5075/83/30004}.
+\bibitem{SCG} G.~Saxena, E.~Chitambar, and G.~Gour,
+\emph{Dynamical Resource Theory of Quantum Coherence},
+Phys. Rev. Research \textbf{2}, 023298 (2020),
+\href{https://doi.org/10.1103/PhysRevResearch.2.023298}{doi:10.1103/PhysRevResearch.2.023298}.
+\bibitem{ATP} F.~Ahnefeld, T.~Theurer, and M.~B.~Plenio,
+\emph{The Structure of Higher-Order Quantum Resources with an Application
+to Coherence},
+\href{https://arxiv.org/abs/2609.40186v1}{arXiv:2609.40186v1} (2026),
+Definition~9, Theorem~10 and Appendix~C, Eq.~(C252c).
+\bibitem{Gour} G.~Gour, \emph{Resources of the Quantum World},
+\href{https://arxiv.org/abs/2402.05474v2}{arXiv:2402.05474v2} (2024),
+Section~9.3.1, Definitions~9.9--9.10 and Theorem~9.2,
+printed pp.~440--443.
+\bibitem{AGG} A.~Arias, A.~Gheondea, and S.~Gudder,
+\emph{Fixed points of quantum operations},
+J. Math. Phys. \textbf{43}, 5872--5881 (2002),
+\href{https://doi.org/10.1063/1.1519669}{doi:10.1063/1.1519669},
+Corollary~3.4.
+\bibitem{Gour2017} G.~Gour,
+\emph{Quantum resource theories in the single-shot regime},
+Phys. Rev. A \textbf{95}, 062314 (2017),
+\href{https://arxiv.org/abs/1610.04247v3}{arXiv:1610.04247v3},
+Appendix~F, Theorem~2.
+\end{thebibliography}
+\bigskip\noindent\small
+\copyright\ 2026 Haobo Ma and Wenlin Zhang.
+Licensed under Creative Commons Attribution 4.0 International
+(\href{https://creativecommons.org/licenses/by/4.0/}{CC BY 4.0}).
+\end{document}

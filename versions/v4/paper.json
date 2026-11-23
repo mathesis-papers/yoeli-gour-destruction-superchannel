@@ -1,0 +1,66 @@
+{
+  "files": {
+    "pdf": {
+      "bytes": 92753,
+      "matches_public": true,
+      "path": "paper.pdf",
+      "public_sha256": "889ca4368f188227fc39c1c5fa4b843bcbfac0201db55bf54c4fc33e131eaa51",
+      "sha256": "889ca4368f188227fc39c1c5fa4b843bcbfac0201db55bf54c4fc33e131eaa51"
+    },
+    "source": {
+      "bytes": 107950,
+      "matches_public": true,
+      "path": "source.archive",
+      "public_sha256": "b021b870e21b5220689f1c10954390036787ec00d8e01adfa8d6cd75f85ef9b4",
+      "sha256": "b021b870e21b5220689f1c10954390036787ec00d8e01adfa8d6cd75f85ef9b4"
+    }
+  },
+  "source_identity": "Mathesis public projection",
+  "work": {
+    "abstract_text": "Extending the two-sided destruction construction of Saxena, Chitambar and Gour (2019), we answer Yoeli and Gour's fixed-superchannel question in Instability as a Quantum Resource, arXiv:2602.18323v1, p. 5, Open directions, negatively: in every dimension d >= 3, dephasing-covariant channels are not exactly the fixed channels of any deterministic superchannel. Any completely positive Choi action fixing every such channel must be the identity. Two-sector pinching, including qubit complete dephasing, admits an explicit physical projection. Uniformity-preserving channels have the same obstruction in every dimension d >= 2. Explicit negative determinants distinguish linear projection from physical retraction and give a counterexample to the affine-set assertion in arXiv:2402.05474v2, Theorem 9.2.",
+    "authors": [
+      {
+        "affiliation": "ChronoAI Pte Ltd, Singapore",
+        "name": "Haobo Ma"
+      },
+      {
+        "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+        "name": "Wenlin Zhang"
+      }
+    ],
+    "concept_doi": null,
+    "current_version": 4,
+    "doi": null,
+    "lean_source": {
+      "revision": "a252cc46f0e145418a978217b8abd41a73fd820d",
+      "url": "https://github.com/the-omega-institute/trureturing/blob/a252cc46f0e145418a978217b8abd41a73fd820d/D5/S3/QuantumChannels/YoeliGourDestructionSuperchannelRefutation.lean"
+    },
+    "license": "CC-BY-4.0",
+    "msc": [],
+    "pdf": {
+      "bytes": 92753,
+      "sha256": "889ca4368f188227fc39c1c5fa4b843bcbfac0201db55bf54c4fc33e131eaa51",
+      "url": "/api/v1/collected-papers/yoeli-gour-destruction-superchannel/files/pdf?version=4"
+    },
+    "previous_version": null,
+    "publication": "public",
+    "published_on": "2026-11-23T03:41:31.713596998Z",
+    "record": "yoeli-gour-destruction-superchannel",
+    "repository_name": "yoeli-gour-destruction-superchannel",
+    "source": {
+      "bytes": 107950,
+      "sha256": "b021b870e21b5220689f1c10954390036787ec00d8e01adfa8d6cd75f85ef9b4",
+      "url": "/api/v1/collected-papers/yoeli-gour-destruction-superchannel/files/source?version=4"
+    },
+    "title": "Fixed points of superchannels for dephasing-covariant channels",
+    "versions": [
+      {
+        "previous_version": null,
+        "published_on": "2026-11-23T03:41:31.713596998Z",
+        "revision": "4",
+        "version": 4
+      }
+    ],
+    "work": "yoeli-gour-destruction-superchannel"
+  }
+}
