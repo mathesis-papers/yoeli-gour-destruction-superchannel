@@ -21,10 +21,10 @@
   "generator_version": "0.1.0",
   "sha256": {
     "CHANGELOG.md": "7167eb14061c48e1d95e89ddffd084fc549a026091808df4964d25e415b41da7",
-    "CITATION.cff": "ed008b0132b3c2b81a6b91b3ceef59929fe0895622f11d2443efcb0a206cab7f",
+    "CITATION.cff": "d97608885bcba5f0a6efb1e892c6957e30859941b120d2a8d6348f0bb439eb59",
     "CONTRIBUTING.md": "fafd66e63160b2a88f433af56d2af2b0f7bf6ed2fd417d46b54446ce07c627ff",
     "LICENSES/CC-BY-4.0.txt": "58230517b7895aa219ff46a6ed63e67057a1582fb9ea054b16728a8c13525650",
-    "README.md": "691abb081eade7c55af53c5361a6b208ec9256082e802bd3a59541ae63f93a63",
+    "README.md": "8017a8d3c351f8768c0f30076c64556f9041225de5efa0f9ca3d3151ed77018a",
     "formalization/nodes.json": "3616b538a42a6ef54056b5f66674ab842927018c38f779d147e7da2bb1741a19",
     "manuscript/yoeli-gour-destruction-superchannel-r4/README.md": "cbdda4586c7ea4718e3aef6db632fb7f63b8e732519120d4efe031daa7d5d013",
     "manuscript/yoeli-gour-destruction-superchannel-r4/metadata.json": "3b8972a18ffed5c9785034f918aaaea220ccc0d5c153786a702a2c035e897758",
@@ -34,9 +34,9 @@
     "manuscript/yoeli-gour-destruction-superchannel-r4/source-manifest.json": "66af702c945a1048226ba342f6a71342a70b36d8d23ac0b3571f53e8ccbae090",
     "manuscript/yoeli-gour-destruction-superchannel-r4/verification.json": "f2872a9bcedf8b0014820c428ea0697cecc0d7c6ae3768df388ca530e9d68920",
     "manuscript/yoeli-gour-destruction-superchannel-r4/verify.py": "9cd5d7b47fb69bf9ae46e00a355e474ff057267d0f8224ae9c092c30031741d5",
-    "paper.json": "818b174aab201502382729ef8809de3cc6807367ec415c03284e32990a625ada",
+    "paper.json": "300954fbab4af7b58b7d273865cdcc1aa42ec158520c3e072b049a3fa88cb508",
     "paper.pdf": "889ca4368f188227fc39c1c5fa4b843bcbfac0201db55bf54c4fc33e131eaa51",
     "source.archive": "b021b870e21b5220689f1c10954390036787ec00d8e01adfa8d6cd75f85ef9b4"
   },
-  "snapshot_identity": "9d338a9cd732a0a0d02e87a3a546d7008a00e6270abbd70c75af1bc7e5bba64f"
+  "snapshot_identity": "75a0016977364bf6ec8c2da22a7861d59e3582fdfd2c955703bb98949cc45e04"
 }

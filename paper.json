@@ -28,9 +28,9 @@
         "name": "Wenlin Zhang"
       }
     ],
-    "concept_doi": null,
+    "concept_doi": "10.5281/zenodo.24410103",
     "current_version": 4,
-    "doi": null,
+    "doi": "10.5281/zenodo.24410104",
     "lean_source": {
       "revision": "a252cc46f0e145418a978217b8abd41a73fd820d",
       "url": "https://github.com/the-omega-institute/trureturing/blob/a252cc46f0e145418a978217b8abd41a73fd820d/D5/S3/QuantumChannels/YoeliGourDestructionSuperchannelRefutation.lean"

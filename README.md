@@ -5,13 +5,15 @@
 Extending the two-sided destruction construction of Saxena, Chitambar and Gour (2019), we answer Yoeli and Gour's fixed-superchannel question in Instability as a Quantum Resource, arXiv:2602.18323v1, p. 5, Open directions, negatively: in every dimension d >= 3, dephasing-covariant channels are not exactly the fixed channels of any deterministic superchannel. Any completely positive Choi action fixing every such channel must be the identity. Two-sector pinching, including qubit complete dephasing, admits an explicit physical projection. Uniformity-preserving channels have the same obstruction in every dimension d >= 2. Explicit negative determinants distinguish linear projection from physical retraction and give a counterexample to the affine-set assertion in arXiv:2402.05474v2, Theorem 9.2.
 
 - PDF: [frozen public file](paper.pdf)
+- DOI: [https://doi.org/10.5281/zenodo.24410104](https://doi.org/10.5281/zenodo.24410104)
+- Concept DOI: [https://doi.org/10.5281/zenodo.24410103](https://doi.org/10.5281/zenodo.24410103)
 - License: CC-BY-4.0
 - Version: 4
 - Mathesis record: [yoeli-gour-destruction-superchannel](https://mathesis-omega-research.apps.chrono-ai.fun/papers/yoeli-gour-destruction-superchannel?version=4)
 
 ## How to cite
 
-Haobo Ma, Wenlin Zhang (2026). Fixed points of superchannels for dephasing-covariant channels. Mathesis, version 4. https://mathesis-omega-research.apps.chrono-ai.fun/papers/yoeli-gour-destruction-superchannel?version=4
+Haobo Ma, Wenlin Zhang (2026). Fixed points of superchannels for dephasing-covariant channels. Mathesis, version 4. https://doi.org/10.5281/zenodo.24410104
 
 ## Statement progress
 
