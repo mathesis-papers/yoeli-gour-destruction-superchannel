@@ -28,7 +28,7 @@
         "\\Tr": "\\operatorname{Tr}",
         "\\id": "\\operatorname{id}"
       },
-      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "next_step": "Formalization work is coordinated through the shared requests.",
       "proof_basis": null,
       "proof_state": "preparing",
       "receipt": null,
@@ -70,7 +70,7 @@
         "\\Tr": "\\operatorname{Tr}",
         "\\id": "\\operatorname{id}"
       },
-      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "next_step": "Formalization work is coordinated through the shared requests.",
       "proof_basis": null,
       "proof_state": "preparing",
       "receipt": null,
@@ -112,7 +112,7 @@
         "\\Tr": "\\operatorname{Tr}",
         "\\id": "\\operatorname{id}"
       },
-      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "next_step": "Formalization work is coordinated through the shared requests.",
       "proof_basis": null,
       "proof_state": "preparing",
       "receipt": null,
@@ -154,7 +154,7 @@
         "\\Tr": "\\operatorname{Tr}",
         "\\id": "\\operatorname{id}"
       },
-      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "next_step": "Formalization work is coordinated through the shared requests.",
       "proof_basis": null,
       "proof_state": "preparing",
       "receipt": null,
@@ -196,7 +196,7 @@
         "\\Tr": "\\operatorname{Tr}",
         "\\id": "\\operatorname{id}"
       },
-      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "next_step": "Formalization work is coordinated through the shared requests.",
       "proof_basis": null,
       "proof_state": "preparing",
       "receipt": null,
@@ -238,7 +238,7 @@
         "\\Tr": "\\operatorname{Tr}",
         "\\id": "\\operatorname{id}"
       },
-      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "next_step": "Formalization work is coordinated through the shared requests.",
       "proof_basis": null,
       "proof_state": "preparing",
       "receipt": null,
