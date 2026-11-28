@@ -34,9 +34,9 @@
     "manuscript/yoeli-gour-destruction-superchannel-r4/source-manifest.json": "66af702c945a1048226ba342f6a71342a70b36d8d23ac0b3571f53e8ccbae090",
     "manuscript/yoeli-gour-destruction-superchannel-r4/verification.json": "f2872a9bcedf8b0014820c428ea0697cecc0d7c6ae3768df388ca530e9d68920",
     "manuscript/yoeli-gour-destruction-superchannel-r4/verify.py": "9cd5d7b47fb69bf9ae46e00a355e474ff057267d0f8224ae9c092c30031741d5",
-    "paper.json": "300954fbab4af7b58b7d273865cdcc1aa42ec158520c3e072b049a3fa88cb508",
+    "paper.json": "ab4a8ea153527ad9fbe1f607f3e6eae15fa1e8515b484f4adf72edfb8aff0934",
     "paper.pdf": "889ca4368f188227fc39c1c5fa4b843bcbfac0201db55bf54c4fc33e131eaa51",
     "source.archive": "b021b870e21b5220689f1c10954390036787ec00d8e01adfa8d6cd75f85ef9b4"
   },
-  "snapshot_identity": "ca2f96b95931468ce1c0ed18efd6cdc46ea1cec4acd6492ce4e26a96a231502e"
+  "snapshot_identity": "d528819e255a57937541a22e317b513f324ab138deb90afc3c9d5689bc4223dd"
 }

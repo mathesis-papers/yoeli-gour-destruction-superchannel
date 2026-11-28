@@ -31,6 +31,7 @@
     "concept_doi": "10.5281/zenodo.24410103",
     "current_version": 4,
     "doi": "10.5281/zenodo.24410104",
+    "kind": "note",
     "lean_source": {
       "revision": "a252cc46f0e145418a978217b8abd41a73fd820d",
       "url": "https://github.com/the-omega-institute/trureturing/blob/a252cc46f0e145418a978217b8abd41a73fd820d/D5/S3/QuantumChannels/YoeliGourDestructionSuperchannelRefutation.lean"
@@ -55,10 +56,12 @@
     "title": "Fixed points of superchannels for dephasing-covariant channels",
     "versions": [
       {
+        "changelog": null,
         "previous_version": null,
         "published_on": "2026-11-23T03:41:31.713596998Z",
         "revision": "4",
-        "version": 4
+        "version": 4,
+        "version_label": null
       }
     ],
     "work": "yoeli-gour-destruction-superchannel"
